@@ -1,30 +1,43 @@
 $lightGreen: #b9e7e7;
+$darkGreen:  #416d6d;
+
 .app {
   display: flex;
   justify-content: center;
   .container {
     width: 1024px;
-
+    
     .link {
       text-decoration: none;
       color: inherit;
     }
     //LOGIN & REGISTER
-
+    
     .auth {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      //background-color: $lightGreen;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 82px;
+    background-image: url('https://images4.alphacoders.com/932/932271.jpg');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 730px;
 
       h1 {
+        font-family: 'Poppins', sans-serif;
         display: flex;
         justify-content: center;
         font-size: 30px;
         color: teal;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        margin-top: -20px;
       }
 
       form {
@@ -32,14 +45,16 @@ $lightGreen: #b9e7e7;
         border-radius: 25px;
         flex-direction: column;
         padding: 50px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         width: 200px;
         gap: 20px;
 
         input {
+          font-size: 16px;
           padding: 10px;
           border: none;
-          border-bottom: 1px solid gray;
+          background-color: white;
+          border-bottom: 1px solid teal;
         }
 
         button {
@@ -52,7 +67,7 @@ $lightGreen: #b9e7e7;
         }
 
         p {
-          font-size: 12px;
+          font-size: 15px;
           color: red;
           text-align: center;
         }
